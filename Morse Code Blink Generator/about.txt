@@ -1,0 +1,37 @@
+Project: Morse Code Blink Generator using Arduino
+
+Objective:
+The goal of this project is to create an Arduino program that takes a user-defined string and outputs the corresponding Morse code via an LED. The LED will blink in specific patterns representing dots and dashes of the Morse code, and appropriate pauses will be used to separate letters and words.
+
+Details:
+- A 'dot' is represented by a short blink (500 ms ON, 200 ms OFF).
+- A 'dash' is represented by a long blink (800 ms ON, 200 ms OFF).
+- There is a 200 ms pause between symbols within a letter.
+- A 600 ms pause separates individual letters.
+- A 1400 ms pause separates words.
+
+Components Required:
+it will be simulation project. So everything will run on Proteus
+
+1. Arduino board (e.g., Arduino Uno)
+2. LED (to display Morse code)
+3. Resistor (220 ohms for LED protection)
+4. Jumper wires
+5. Breadboard
+
+Procedure:
+1. Set up the LED on a digital pin of the Arduino (e.g., pin 13).
+2. Write an Arduino sketch to translate the user-defined string into Morse code, using an array or map to convert each letter into its corresponding Morse code pattern.
+3. Implement time delays to control the LED blink pattern:
+   - 200 ms ON for dots and 600 ms ON for dashes.
+   - Include delays between letters and words as per Morse code rules.
+4. Input string will be hardcoded or taken via Serial monitor.
+
+Example Input:
+For the input string "SOS":
+- 'S' will be represented as '...'.
+- 'O' will be represented as '---'.
+- 'S' will be represented as '...'.
+
+The LED will blink accordingly with appropriate pauses between letters and words.
+
